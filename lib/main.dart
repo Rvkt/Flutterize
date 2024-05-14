@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterize/modules/shimmer_effect/shimmer_effect_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,19 +18,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
         useMaterial3: true,
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text(
-            'Flutterize',
-            style: TextStyle(color: Colors.white),
-          ),
-          centerTitle: true,
-          backgroundColor: Colors.black87,
-        ),
-        body: const Center(
-          child: Text('Initial Project'),
-        ),
-      ),
+      home: const ShimmerEffectScreen(),
     );
   }
 }
