@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:flutterize/modules/shimmer_effect/shimmer_effect_screen.dart';
 
@@ -7,8 +9,11 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
+
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
       title: 'Flutterize',
       // debugShowMaterialGrid: true,
